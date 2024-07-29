@@ -34,7 +34,7 @@ const AppHeader = () => {
   const { colorMode, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
 
   const dispatch = useDispatch()
-  const sidebarShow = useSelector((state) => state.data.custom)
+  const sidebarShow = useSelector((state) => state.custom.sidebarShow)
 
   useEffect(() => {
     document.addEventListener('scroll', () => {
